@@ -12,7 +12,9 @@ to use it:
 
 4 - pip install -r requirements.txt
 
-5 - python3 manage.py runserver
+5 - ./manage.py migrate
+
+6 - python3 manage.py runserver
 
 
 to access admin panel and make Question or answer do like this:
