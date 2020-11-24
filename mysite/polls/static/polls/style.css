@@ -1,0 +1,43 @@
+li a {
+    color: #fff;
+    font-size: 20px;
+
+}
+
+ul li {
+    list-style: none;
+    list-display: none;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+li {
+    list-style: none;
+    list-display: none;
+}
+
+
+li a:hover,
+li a:after,
+li a:active{
+    color: #fff;
+    text-decoration: none;
+}
+
+a {
+    margin-top: 10px;
+}
+
+li {
+    margin-top: 10px;
+}
+
+input{
+    margin-top: 10px;
+}
+
+body {
+    background: #e1e1e1;
+    font-family: Sens-serif;
+}
+

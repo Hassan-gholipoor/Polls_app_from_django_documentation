@@ -1,0 +1,19 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<div>
+    <center>
+        <h1>{{ question.question_text }}</h1>
+
+        <ul>
+        {% for choice in question.choice_set.all %}
+            <li>{{ choice.choice_text }} -- {{ choice.votes }} vote{{ choice.votes|pluralize }}</li>
+        {% endfor %}
+        </ul>
+
+        <a class="btn btn-danger " href="{% url 'polls:detail' question.id %}">Vote again?</a>
+        <br>
+        <a class="btn btn-primary" href="{% url 'polls:index' %}">back to home</a>
+    </center>
+</div>
